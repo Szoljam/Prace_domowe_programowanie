@@ -1,0 +1,16 @@
+def czy_trojkat(a, b, c):
+    return a + b > c and a + c > b and b + c > a
+def czy_rownoramienny(a, b, c):
+    return a == b or a == c or b == c
+def czy_skalenny(a, b, c):
+    return a != b and a != c and b != c
+def czy_rownoboczny(a, b, c): 
+    return a == b == c 
+a = int(input("Podaj długość pierwszego boku: "))
+b = int(input("Podaj długość drugiego boku: "))
+c = int(input("Podaj długość trzeciego boku: "))
+
+print(f"Czy Trójkąt: {czy_trojkat(a, b, c)}")
+print(f"Czy Skalenny: {czy_skalenny(a, b, c)}")
+print(f"Czy Równoramienny: {czy_rownoramienny(a, b, c)}")
+print(f"Czy Równoboczny: {czy_rownoboczny(a, b, c)}")
